@@ -1,7 +1,5 @@
 head {
-    background-color:blue; 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Tables */
@@ -11,6 +9,7 @@ td {
 
 /* Fonts */
 body {
+    background-color: #042069; /*It's unironically my favorite shade of blue. Sorry...*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
