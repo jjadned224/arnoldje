@@ -43,6 +43,7 @@ div {
 }
 
 .internal {
+    width: fit-content;
     box-sizing: border-box;
     width: auto;
     align-self: center;
