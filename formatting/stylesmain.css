@@ -32,8 +32,10 @@ div {
 }
 
 .blocks {
+    width:100%;
     display: inline-flex;
     flex-direction: column;
+    column-gap: 10pt;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
@@ -43,14 +45,13 @@ div {
 }
 
 .internal {
-    width:max-content;
-    box-sizing: border-box;
-    width: auto;
-    align-self: center;
-    align-items: center;
-    column-gap: 10px;
+    width:100%;
     display: inline-flex;
     flex-direction: column;
+    column-gap: 10pt;
+    align-self: stretch;
+    align-items: center;
+    justify-content: stretch;
     font-size: large;
 }
 
@@ -61,6 +62,9 @@ div {
         display: inline-flex;
         flex-direction: column;
         column-gap: 10px;
+        width:100%;
+        align-items: center;
+        justify-content: stretch;
     }
 
 
@@ -77,6 +81,9 @@ div {
         display: inline-flex;
         flex-direction: row;
         row-gap: 10px;
+        width:100%;
+        align-items: center;
+        justify-content: stretch;
     }
     
 }
