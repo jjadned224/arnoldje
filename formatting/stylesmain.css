@@ -27,10 +27,9 @@ a {
 
 div {
     display: inline-flex;
-    row-gap: 1px;
+    row-gap: 10px;
     column-gap: 10px;
-    flex-direction: column;
-    column-gap: 10px;
+    flex-direction: row;
 }
 
 .blocks {
