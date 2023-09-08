@@ -29,14 +29,11 @@ div {
     display: inline-flex;
     row-gap: 10px;
     column-gap: 10px;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .blocks {
     width:100%;
-    display: inline-flex;
-    flex-direction: row;
-    row-gap: 10pt;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
@@ -46,10 +43,6 @@ div {
 }
 
 .internal {
-    width:100%;
-    display: inline-flex;
-    flex-direction: row;
-    column-gap: 10pt;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
