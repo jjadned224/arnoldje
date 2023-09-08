@@ -27,8 +27,6 @@ a {
 
 div {
     display: inline-flex;
-    row-gap: 10px;
-    column-gap: 10px;
     flex-direction: column;
 }
 
@@ -75,6 +73,7 @@ div {
         display: inline-flex;
         flex-direction: row;
         row-gap: 10px;
+        column-gap: 10px;
         width:100%;
         align-items: center;
         justify-content: stretch;
