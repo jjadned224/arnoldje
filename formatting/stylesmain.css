@@ -73,6 +73,10 @@ div {
         align-self: center;
     }
 
+    .blocks {
+        width: 33%;
+    }
+
 
 }
 
@@ -81,6 +85,9 @@ div {
         display: flex;
         justify-content: center;
         
+    }
+    .blocks {
+        width: 100%;
     }
 
     .lapper {
