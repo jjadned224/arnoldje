@@ -29,6 +29,8 @@ div {
     display: inline-flex;
     row-gap: 1px;
     column-gap: 10px;
+    flex-direction: column;
+    column-gap: 10px;
 }
 
 .blocks {
