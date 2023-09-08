@@ -30,23 +30,40 @@ div {
     flex-direction: column;
 }
 
+.lapper {
+    display: inline-flex;
+    row-gap: 1px;
+    column-gap: 10px;
+}
+
 .blocks {
     width:100%;
+    display: inline-block;
+    align-self: center;
+    justify-content: stretch;
+    column-gap: 10pt;
+    display: inline-flex;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
+    display: inline-block;
     font-size: large;
     background-color: lightblue;
     border: 10px solid black;
 }
 
 .internal {
-    align-self: stretch;
-    align-items: center;
-    justify-content: stretch;
+    box-sizing: border-box;
+    width: 32%;
+    row-gap: 1px;
+    display: inline-block;
     font-size: large;
+    box-sizing: border-box;
+    width: 20%;
+    display: inline-flex;
+    column-gap: 10pt;
+    flex-direction: row;
 }
-
 
 @media screen and (max-width : 1200px) {
 
