@@ -28,11 +28,10 @@ a {
 div {
     display: inline-flex;
     flex-direction: column;
-    row-gap: 1px;
-    column-gap: 10px;
 }
 
 .blocks {
+    width:100%;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
@@ -42,21 +41,22 @@ div {
 }
 
 .internal {
-    box-sizing: border-box;
-    width: 32%;
-    column-gap: 10px;
-    display: inline-flex;
-    flex-direction: column;
+    align-self: stretch;
+    align-items: center;
+    justify-content: stretch;
     font-size: large;
 }
 
 
 @media screen and (max-width : 1200px) {
 
-    .blocks {
+    .lapper {
         display: inline-flex;
         flex-direction: column;
         column-gap: 10px;
+        width:100%;
+        align-items: center;
+        justify-content: stretch;
     }
 
 
@@ -69,10 +69,14 @@ div {
     
     }
 
-    .blocks {
+    .lapper {
         display: inline-flex;
         flex-direction: row;
         row-gap: 10px;
+        column-gap: 10px;
+        width:100%;
+        align-items: center;
+        justify-content: stretch;
     }
     
 }
