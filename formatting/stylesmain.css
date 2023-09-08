@@ -27,11 +27,13 @@ a {
 
 div {
     display: inline-flex;
-    flex-direction: column;
+    row-gap: 1px;
+    column-gap: 10px;
 }
 
 .blocks {
-    width:100%;
+    display: inline-flex;
+    flex-direction: column;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
@@ -41,9 +43,14 @@ div {
 }
 
 .internal {
-    align-self: stretch;
+    width:max-content;
+    box-sizing: border-box;
+    width: auto;
+    align-self: center;
     align-items: center;
-    justify-content: stretch;
+    column-gap: 10px;
+    display: inline-flex;
+    flex-direction: column;
     font-size: large;
 }
 
@@ -54,9 +61,6 @@ div {
         display: inline-flex;
         flex-direction: column;
         column-gap: 10px;
-        width:100%;
-        align-items: center;
-        justify-content: stretch;
     }
 
 
@@ -73,10 +77,6 @@ div {
         display: inline-flex;
         flex-direction: row;
         row-gap: 10px;
-        column-gap: 10px;
-        width:100%;
-        align-items: center;
-        justify-content: stretch;
     }
     
 }
