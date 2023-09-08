@@ -6,7 +6,8 @@ html {
 
 head {
     font-family: Arial, Helvetica, sans-serif;
-    color:white
+    color:white;
+    text-align: center;
 }
 
 h2 {
@@ -22,6 +23,8 @@ div {
     display: inline-flex;
     row-gap: 1px;
     column-gap: 10px;
+    background-color: lightblue;
+    border: 10px solid black;
 }
 
 .blocks {
@@ -30,10 +33,7 @@ div {
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
-    display: inline-block;
     font-size: large;
-    background-color: lightblue;
-    border: 10px solid black;
 }
 
 .internal {
