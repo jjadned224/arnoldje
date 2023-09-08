@@ -30,12 +30,13 @@ body {
 
 div {
     display: inline-block;
-    row-gap: 1px;
-    column-gap: 10px;
     row-gap: 10px;
+    column-gap: 10px;
 }
 
 .blocks {
+    row-gap: 10px;
+    row-gap: 10px;
     display: inline-flex;
     flex-direction: column;
     align-self: stretch;
@@ -52,7 +53,8 @@ div {
     width: auto;
     align-self: center;
     align-items: center;
-    column-gap: 10px;
+    row-gap: 10px;
+    row-gap: 10px;
     display: inline-flex;
     flex-direction: column;
     font-size: large;
@@ -67,6 +69,7 @@ div {
         column-gap: 10px;
         row-gap: 10px;
         align-items: center;
+        align-self: center;
     }
 
 
@@ -85,6 +88,7 @@ div {
         row-gap: 10px;
         row-gap: 10px;
         align-items: center;
+        align-self: center;
     }
     
 }
