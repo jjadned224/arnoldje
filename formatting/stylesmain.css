@@ -63,6 +63,7 @@ div {
         flex-direction: column;
         column-gap: 10px;
         row-gap: 10px;
+        align-items: center;
     }
 
 
@@ -72,7 +73,7 @@ div {
     #navmain {
         display: flex;
         justify-content: center;
-    
+        
     }
 
     .lapper {
@@ -80,6 +81,7 @@ div {
         flex-direction: row;
         row-gap: 10px;
         row-gap: 10px;
+        align-items: center;
     }
     
 }
