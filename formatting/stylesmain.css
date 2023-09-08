@@ -10,6 +10,10 @@ head {
     text-align: center;
 }
 
+h1 { 
+    text-align: center;
+}
+
 h2 {
     text-align: center;
 }
@@ -39,11 +43,10 @@ div {
 .internal {
     box-sizing: border-box;
     width: 32%;
-    row-gap: 1px;
-    display: inline-block;
+    column-gap: 10px;
+    display: inline-flex;
+    flex-direction: column;
     font-size: large;
-    background-color: rgb(0, 110, 255);
-    border: 2px solid black;
 }
 
 
