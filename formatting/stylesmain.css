@@ -27,43 +27,35 @@ a {
 
 div {
     display: inline-flex;
-    flex-direction: column;
-}
-
-.lapper {
-    display: inline-flex;
-    row-gap: 1px;
+    row-gap: 10px;
     column-gap: 10px;
+    flex-direction: row;
 }
 
 .blocks {
     width:100%;
-    display: inline-block;
-    align-self: center;
-    justify-content: stretch;
-    column-gap: 10pt;
     display: inline-flex;
+    flex-direction: row;
+    row-gap: 10pt;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
-    display: inline-block;
     font-size: large;
     background-color: lightblue;
     border: 10px solid black;
 }
 
 .internal {
-    box-sizing: border-box;
-    width: 32%;
-    row-gap: 1px;
-    display: inline-block;
-    font-size: large;
-    box-sizing: border-box;
-    width: 20%;
+    width:100%;
     display: inline-flex;
-    column-gap: 10pt;
     flex-direction: row;
+    column-gap: 10pt;
+    align-self: stretch;
+    align-items: center;
+    justify-content: stretch;
+    font-size: large;
 }
+
 
 @media screen and (max-width : 1200px) {
 
@@ -90,7 +82,6 @@ div {
         display: inline-flex;
         flex-direction: row;
         row-gap: 10px;
-        column-gap: 10px;
         width:100%;
         align-items: center;
         justify-content: stretch;
