@@ -35,6 +35,7 @@ div {
 }
 
 .blocks {
+    width: auto;
     row-gap: 10px;
     column-gap: 10px;
     display: inline-flex;
