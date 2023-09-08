@@ -47,7 +47,7 @@ div {
 .internal {
     width:100%;
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     column-gap: 10pt;
     align-self: stretch;
     align-items: center;
