@@ -43,14 +43,14 @@ div {
 }
 
 .internal {
-    width: fit-content;
+    width:max-content;
     box-sizing: border-box;
     width: auto;
     align-self: center;
     align-items: center;
     column-gap: 10px;
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: large;
 }
 
