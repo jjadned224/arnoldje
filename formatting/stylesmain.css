@@ -44,8 +44,7 @@ div {
     justify-content: stretch;
     font-size: large;
     background-color: lightblue;
-    border-color: lightseagreen;
-    border: 2px;
+    border: 5px solid lightseagreen;
 }
 
 .internal {
