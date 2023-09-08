@@ -23,8 +23,6 @@ div {
     display: inline-flex;
     row-gap: 1px;
     column-gap: 10px;
-    background-color: lightblue;
-    border: 10px solid black;
 }
 
 .blocks {
@@ -34,6 +32,8 @@ div {
     align-items: center;
     justify-content: stretch;
     font-size: large;
+    background-color: lightblue;
+    border: 10px solid black;
 }
 
 .internal {
