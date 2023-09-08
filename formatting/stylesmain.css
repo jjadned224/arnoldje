@@ -34,8 +34,8 @@ div {
 .blocks {
     width:100%;
     display: inline-flex;
-    flex-direction: column;
-    column-gap: 10pt;
+    flex-direction: row;
+    row-gap: 10pt;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
