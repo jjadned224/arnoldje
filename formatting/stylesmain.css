@@ -1,5 +1,5 @@
 html {
-    background-color: #042069;
+    background-color: lightseagreen;
     font-family: Arial, Helvetica, sans-serif;
     color:white;
 }
@@ -12,6 +12,40 @@ head {
 h2 {
     text-align: center;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    display: inline-flex;
+    row-gap: 1px;
+    column-gap: 10px;
+}
+
+.blocks {
+    display: inline-flex;
+    flex-direction: row;
+    align-self: stretch;
+    align-items: center;
+    justify-content: stretch;
+    display: inline-block;
+    font-size: large;
+    background-color: lightblue;
+    border: 10px solid black;
+}
+
+.internal {
+    box-sizing: border-box;
+    width: 32%;
+    row-gap: 1px;
+    display: inline-block;
+    font-size: large;
+    background-color: rgb(0, 110, 255);
+    border: 2px solid black;
+}
+
 
 @media screen and (max-width : 720px) {
 }
