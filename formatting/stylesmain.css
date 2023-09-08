@@ -27,16 +27,11 @@ a {
 
 div {
     display: inline-flex;
-    row-gap: 10px;
+    row-gap: 1px;
     column-gap: 10px;
-    flex-direction: row;
 }
 
 .blocks {
-    width:100%;
-    display: inline-flex;
-    flex-direction: row;
-    row-gap: 10pt;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
@@ -46,26 +41,21 @@ div {
 }
 
 .internal {
-    width:100%;
+    box-sizing: border-box;
+    width: 32%;
+    column-gap: 10px;
     display: inline-flex;
-    flex-direction: row;
-    column-gap: 10pt;
-    align-self: stretch;
-    align-items: center;
-    justify-content: stretch;
+    flex-direction: column;
     font-size: large;
 }
 
 
 @media screen and (max-width : 1200px) {
 
-    .lapper {
+    .blocks {
         display: inline-flex;
         flex-direction: column;
         column-gap: 10px;
-        width:100%;
-        align-items: center;
-        justify-content: stretch;
     }
 
 
@@ -78,13 +68,10 @@ div {
     
     }
 
-    .lapper {
+    .blocks {
         display: inline-flex;
         flex-direction: row;
         row-gap: 10px;
-        width:100%;
-        align-items: center;
-        justify-content: stretch;
     }
     
 }
