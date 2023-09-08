@@ -42,6 +42,9 @@ div {
 
 .internal {
     box-sizing: border-box;
+    width: auto;
+    align-self: center;
+    align-items: center;
     column-gap: 10px;
     display: inline-flex;
     flex-direction: column;
