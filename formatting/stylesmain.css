@@ -36,7 +36,7 @@ div {
 
 .blocks {
     row-gap: 10px;
-    row-gap: 10px;
+    column-gap: 10px;
     display: inline-flex;
     flex-direction: column;
     align-self: stretch;
