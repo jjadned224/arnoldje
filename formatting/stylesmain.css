@@ -32,9 +32,11 @@ div {
 }
 
 .blocks {
+    display: inline-flex;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
+    display: inline-block;
     font-size: large;
     background-color: lightblue;
     border: 10px solid black;
