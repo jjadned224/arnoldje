@@ -50,10 +50,13 @@ div {
 }
 
 
-@media screen and (max-width : 720px) {
+@media screen and (max-width : 1200px) {
+
+
+
 }
 
-@media screen and (min-width : 720px) and (max-width : 99999px) {
+@media screen and (min-width : 1200px) and (max-width : 99999px) {
     #navmain {
         display: flex;
         justify-content: center;
