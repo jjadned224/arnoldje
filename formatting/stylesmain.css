@@ -57,7 +57,7 @@ div {
 
 @media screen and (max-width : 1200px) {
 
-    .blocks {
+    .lapper {
         display: inline-flex;
         flex-direction: column;
         column-gap: 10px;
@@ -73,7 +73,7 @@ div {
     
     }
 
-    .blocks {
+    .lapper {
         display: inline-flex;
         flex-direction: row;
         row-gap: 10px;
