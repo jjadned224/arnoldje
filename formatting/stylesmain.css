@@ -8,10 +8,12 @@ head {
     font-family: Arial, Helvetica, sans-serif;
     color:white;
     text-align: center;
+    align-self: center;
 }
 
 h1 { 
     text-align: center;
+    align-self: center;
 }
 
 h2 {
@@ -30,8 +32,6 @@ div {
 }
 
 .blocks {
-    display: inline-flex;
-    flex-direction: row;
     align-self: stretch;
     align-items: center;
     justify-content: stretch;
@@ -47,11 +47,18 @@ div {
     display: inline-flex;
     flex-direction: column;
     font-size: large;
+    border: 0cap;
+    background-color: lightblue;
 }
 
 
 @media screen and (max-width : 1200px) {
 
+    .blocks {
+        display: inline-flex;
+        flex-direction: column;
+        column-gap: 10px;
+    }
 
 
 }
@@ -61,6 +68,12 @@ div {
         display: flex;
         justify-content: center;
     
+    }
+
+    .blocks {
+        display: inline-flex;
+        flex-direction: row;
+        row-gap: 10px;
     }
     
 }
