@@ -1,7 +1,44 @@
-.header {
-    padding: 10px 20px;
-    background: black;
+@keyframes fadeL {
+    from {margin-left: 100%; opacity: 0%;}
+    to { margin-left: 0%; opacity: 100%;}
+  }
+  @keyframes fadeup {
+    from {margin-top: 100%; opacity: 0%;}
+    to { margin-top: 0%; opacity: 100%;}
+  }
+  @keyframes fadeR {
+    from {margin-right: 100%; opacity: 0%;}
+    to { margin-right: 0%; opacity: 100%;}
+  }
+  @keyframes fadeD {
+    from {margin-bottom: 100%; opacity: 0%;}
+    to { margin-bottom: 0%; opacity: 100%;}
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0%;}
+    to { opacity: 100%;}
+  }
+
+html {
+    font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
+    margin-left: 0%;
+    margin-right: 0%;
 }
+
+.header {
+    padding: 10px 10px 10px 300px;
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    z-index: 10000;
+}
+
+
 
 .scroller {
     position: fixed;
@@ -11,3 +48,567 @@
     margin-top: 0px;
     margin-right: 0px;
 }
+
+#navmain ul {
+    column-gap: 0;
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.navver { 
+    display: inline-flex;
+    text-align: center;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(115, 0, 10); 
+    color: White;
+    font-size: x-large;
+    font-weight: bold;
+}
+#navmain a {
+        display: inline-flex;
+        text-align: center;
+        text-decoration: none;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgb(115, 0, 10); 
+        padding: 15px 15px 15px 15px;
+        color: White;
+        font-size: x-large;
+        font-weight: bold;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    width: 100%; 
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img1 { background-image: url("../images/dude_on_beach.jpg"); }
+.top_h {
+    background-color: #73000A;
+    color: white;
+    align-self: center;
+    position:absolute;
+    left: 20%;
+    top: 75%;
+    font-size: 36pt;
+    padding: 5pt;
+}
+.bodywhite {
+    background-color: white;
+    background-size: auto 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: left;
+    word-wrap: normal;
+}
+.bodywhite h3 {
+    font-weight: bold;
+    position: absolute;
+    bottom: 2%;
+    width: 35%;
+}
+.bodywhite p {
+    position: absolute;
+    bottom: -6%;
+    width: 35%;
+}
+
+
+.bodyred {
+    background-color: #73000A;
+    color:white;
+    text-align: left;
+    padding: 100px 20% 10px 20px;
+    justify-self: right;
+    width: 100%;
+}
+.S1 {
+    display: inline-flex;
+    flex-direction: row;
+    height: auto;
+}
+.bodyred h1 {
+    font-weight: bold;
+    font-size: 36pt;
+    position: relative;
+    top: 50%;
+}
+.bodyred p {
+    position: relative;
+    top: 45%;
+}
+
+.S2 {
+    display: inline-flex;
+    flex-direction: row;
+    height: auto;
+}
+.bodyblack {
+    justify-self: left;
+    background-color: black;
+    color:white;
+}
+.imager {
+    justify-self: right;
+    animation: fadeIn 5s;
+    background-color: black;
+}
+.bodyblack h1 {
+    width: 50%;
+    font-weight: bold;
+    font-size: 24pt;
+    position: relative;
+    top: 30%;
+    left: 45%;
+}
+.bodyblack p {
+    width: 50%;
+    position: relative;
+    top: 30%;
+    left: 45%;
+}
+
+
+.bodygrey {
+    display: inline-flex;
+    flex-direction: row;
+    row-gap: 10pt;
+    background-color: #ECECEC;
+    color:black;
+    padding: 0px 30% 0px 30%;
+}
+.imager2 {
+    animation: fadeIn 5s;
+    box-sizing: border-box;
+    margin: 15pt;
+    width: 120%;
+    height: 30%;
+}
+.cols {
+    display: inline-flex;
+    flex-direction: column;
+}
+.bodygrey h1 {
+    color:#73000A;
+    font-size: 22pt;
+    position: relative;
+    top: 10%;
+}
+.bodygrey p {
+    position: relative;
+    top: 5%;
+}
+
+.research {
+   position: relative;
+   left: 25%;
+    display: inline-flex;
+    flex-direction: row;
+}
+.col_r {
+    box-sizing: border-box;
+    width:10%;
+    margin: 10pt;
+    background-color: white;
+    color: #ECECEC;
+    display: inline-flex;
+    flex-direction: column;
+}
+.col_r a {
+    text-decoration: none;
+}
+.col_r p {
+   color: black;
+   text-align: left; 
+}
+.col_r h3 {
+    color:#73000A;
+    text-align: left;
+}
+.r_img {
+    position: relative;
+    margin: 5pt;
+    width: 100%;
+    height: auto;
+}
+.r_title {
+color: #73000A;
+font-size: 28pt;
+   text-align: center;
+}
+
+
+
+
+.S4 {
+    display: inline-flex;
+    flex-direction: row;
+    height: auto;
+}
+.bodymaroon {
+    justify-self: left;
+    background-color: maroon;
+    color:white;
+}
+.imager3 {
+    justify-self: left;
+    animation: fadeIn 5s;
+    background-color: maroon;
+}
+.bodymaroon h1 {
+    width: 50%;
+    font-weight: bold;
+    font-size: 24pt;
+    position: relative;
+    top: 30%;
+    left: 2%;
+}
+.bodymaroon p {
+    width: 50%;
+    position: relative;
+    top: 30%;
+    left: 2%;
+}
+
+
+.bodygrey_2 {
+    display: inline-flex;
+    flex-direction: row;
+    row-gap: 10pt;
+    background-color: #ECECEC;
+    color:black;
+    padding: 0px 30% 0px 30%;
+}
+.imager4 {
+    animation: fadeIn 5s;
+    box-sizing: border-box;
+    margin: 15pt;
+    width: 120%;
+    height: 30%;
+}
+.cols {
+    display: inline-flex;
+    flex-direction: column;
+}
+.bodygrey_2 h1 {
+    color:#73000A;
+    font-size: 22pt;
+    position: relative;
+    top: 10%;
+}
+.bodygrey_2 p {
+    position: relative;
+    top: 5%;
+}
+
+
+.bodyblue {
+    background-color: #1F414D;
+    color:white;
+    text-align: left;
+    padding: 100px 20% 10px 20px;
+    justify-self: right;
+    width: 100%;
+}
+.S6 {
+    display: inline-flex;
+    flex-direction: row;
+    height: auto;
+}
+.bodyblue h1 {
+    font-weight: bold;
+    font-size: 36pt;
+    position: relative;
+    top: 0%;
+}
+.bodyblue p {
+    position: relative;
+    top: 0%;
+}
+
+.top2 {
+    width: 100%; 
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img2 { background-image: url("../images/IMG_3323.JPG"); }
+.boxer {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #73000A;
+    color: white;
+    align-self: center;
+    position:relative;
+    left: 5%;
+    top: 50%;
+    width: 30%;
+    padding: 5pt;
+}
+.boxer h1 {
+    font-size: 12;
+}
+.boxer p {
+    font-size: 8;
+}
+
+
+.bodywhite_2 {
+    background-color: white;
+    color:#73000A;
+    text-align: left;
+    padding: 100px 20% 10px 20px;
+    justify-self: right;
+    width: 100%;
+}
+.S7 {
+    display: inline-flex;
+    flex-direction: row;
+    height: auto;
+}
+.bodywhite_2 h1 {
+    font-weight: bold;
+    font-size: 36pt;
+    position: relative;
+    top: 0%;
+}
+.bodywhite_2 p {
+    position: relative;
+    top: 0%;
+}
+.spec {
+    color: black;
+}
+
+
+.button {
+    background-color: #73000A;
+    width: 100%;
+    height: 5%;
+    padding: 10pt;
+    border: 2px solid #73000A;
+}
+.button:hover {
+    background-color: white;
+    color:#73000A; 
+}
+.button h2:hover {
+    color:#73000A;
+}
+.button h2 {
+    position: relative;
+    bottom: 40%;
+    text-align: center;
+    font-size: 14pt;
+    color: white;
+}
+.button a {
+    text-decoration: none;
+}
+
+.button2 {
+    background-color: black;
+    width: 50%;
+    height: 5%;
+    padding: 2pt;
+    border: 2px solid white;
+}
+.button2:hover {
+    background-color: white;
+    color:#73000A; 
+}
+.button2 h2:hover {
+    color:#73000A;
+}
+.button2 h2 {
+    position: relative;
+    bottom: 40%;
+    text-align: center;
+    font-size: 12pt;
+    color: white;
+}
+.button2 a {
+    text-decoration: none;
+}
+
+
+.button3 {
+    background-color: #73000A;
+    width: 50%;
+    height: 5%;
+    padding: 10pt;
+    border: 2px solid white;
+    position: relative;
+    top: 30%;
+    left: 40%;
+}
+.button3:hover {
+    background-color: white;
+    color:#73000A; 
+    border: 2px solid #73000A;
+}
+.button3 h2:hover {
+    color:#73000A;
+}
+.button3 h2 {
+    position: relative;
+    bottom: 40%;
+    text-align: center;
+    font-size: 14pt;
+    color: white;
+}
+.button3 a {
+    text-decoration: none;
+}
+
+.button4 {
+    background-color: #73000A;
+    width: 60%;
+    height: 5%;
+    padding: 10pt;
+    border: 2px solid #73000A;
+    position: relative;
+    top: 10%;
+}
+.button4:hover {
+    background-color: white;
+    color:#73000A; 
+}
+.button4 h2:hover {
+    color:#73000A;
+}
+.button4 h2 {
+    position: relative;
+    bottom: 50%;
+    text-align: center;
+    font-size: 12pt;
+    color: white;
+}
+.button4 a {
+    text-decoration: none;
+}
+
+.button5 {
+    background-color: black;
+    width: 20%;
+    height: 5%;
+    padding: 2pt;
+    border: 2px solid white;
+    position: relative;
+    top: 30%;
+    left: 2%;
+}
+.button5:hover {
+    background-color: white;
+    color:#73000A; 
+}
+.button5 h2:hover {
+    color:#73000A;
+}
+.button5 h2 {
+    position: relative;
+    bottom: 40%;
+    text-align: center;
+    font-size: 12pt;
+    color: white;
+}
+.button5 a {
+    text-decoration: none;
+}
+
+.button6 {
+    background-color: #73000A;
+    width: 50%;
+    height: 5%;
+    padding: 2pt;
+    border: 2px solid white;
+}
+.button6:hover {
+    background-color: white;
+    color:#73000A; 
+}
+.button6 h2:hover {
+    color:#73000A;
+}
+.button6 h2 {
+    position: relative;
+    bottom: 40%;
+    text-align: center;
+    font-size: 12pt;
+    color: white;
+}
+.button6 a {
+    text-decoration: none;
+}
+
+.button7 {
+    background-color: #73000A;
+    width: 50%;
+    height: 15%;
+    padding: 2pt;
+    border: 2px solid white;
+}
+.button7:hover {
+    background-color: white;
+    color:#73000A; 
+}
+.button7 h2:hover {
+    color:#73000A;
+}
+.button7 h2 {
+    position: relative;
+    bottom: 10%;
+    text-align: center;
+    font-size: 12pt;
+    color: white;
+}
+.button7 a {
+    text-decoration: none;
+}
+
+
+
+footer {
+    background-color: #73000A;
+    color: white;
+    padding-left: 5%;
+}
+
+.footer h3 {
+    font-weight: bold;
+    background-color: #73000A;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.tab_f {
+    padding-right: 0;
+    display: inline-flex;
+    flex-direction: row;
+    height: 50%;
+    width: 500px;
+}
+
+.tav_f tr {
+    height: 2px;
+}
+
+.tab_f td {
+    height: 2px;
+    column-gap: 10px;
+    width: 50%;
+}
+
+#navmain a:hover{background: rgb(87, 0, 8);}
+
