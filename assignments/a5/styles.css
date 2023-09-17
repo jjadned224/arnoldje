@@ -92,7 +92,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.img1 { background-image: url("../images/dude_on_beach.jpg"); }
+.img1 { background-image: url("../../images/dude_on_beach.jpg"); }
 .top_h {
     background-color: #73000A;
     color: white;

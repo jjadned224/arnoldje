@@ -23,21 +23,23 @@ const dance = () => {
 
 const complaint = () => {
     const outout = document.createElement("div"); 
-    const proout = document.getElementById("name").value;
-    const comout = document.getElementById("comment").value;
-    const ratout = document.getElementById("rating").value;
-    const useout = document.getElementById("username").value;
+    const proout = document.createTextNode(document.getElementById("name").value);
+    const comout = document.createTextNode(document.getElementById("comment").value);
+    const ratout = document.createTextNode(document.getElementById("rating").value);
+    const useout = document.createTextNode(document.getElementById("username").value);
     outout.classList.add("output");
     outout.appendChild(proout);
-    outout.appendChild(comout);
+    outout.appendChild(document.createElement("br"));
     outout.appendChild(ratout);
-    const divide = document.createTextNode("/5");
+    const divide = document.createTextNode("/5 Stars. ");
     outout.appendChild(divide);
-    const by = document.createTextNode("\nBy: ");
+    outout.appendChild(comout);
+    outout.appendChild(document.createElement("br"));
+    const by = document.createTextNode("By: ");
     outout.appendChild(by);
     outout.appendChild(useout);
     document.getElementById("cout").appendChild(outout);
-}
+    }
 
 window.onload = () => {
     count = 0;
