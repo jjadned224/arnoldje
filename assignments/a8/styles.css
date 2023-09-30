@@ -1,0 +1,82 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(55, 55, 55);
+    margin: 1%;
+}
+
+h1 {
+    text-align: center;
+}
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5%;
+}
+
+.inside {
+    background-color: rgb(70, 114, 233);
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-left: 4%;
+    padding-bottom: 10px;
+}
+.inside2 {
+    background-color: rgb(70, 114, 233);
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    padding-left: 5%;
+}
+.walkerbut {
+    background: none;
+    border:none;
+}
+.walker {
+    margin-right: 90%;
+}
+.frame1 {
+    align-self: left;
+}
+
+.hide {
+    display: none;
+}
+.inputter {
+    width: 33%;
+    font-size: large;
+}
+.funnybutton {
+    font-size: large;
+}
+h3 {
+    display: inline;
+}
+.redboxcss {
+    background-color: rgb(255, 0, 0);
+    height: 0px;
+    width: 100px;
+    align-self: center;
+    position: absolute;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.in2 {
+    display: flex;
+    flex-direction: column;
+}
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
+.boxcss {
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 100px;
+    align-self: center;
+    position: absolute;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
