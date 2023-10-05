@@ -1,7 +1,7 @@
 const quotes = ["Call me sentimental, but I wish we'd met under different circumstances. - Berlioz",
 "You've chosen your answer. Now see it through. - Kasumi Sumika" ,
 "Lets see how far they can fly.... on borrowed wings. - Unknown" ,
-"Words are meaningless now, show me what you can do. - Unknow" ,
+"Words are meaningless now, show me what you can do. - Unknown" ,
 "In the grand scheme of things, you and I are insignificant... - Genobee"];
 
 window.onload = () => {
