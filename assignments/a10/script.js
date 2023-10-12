@@ -49,7 +49,7 @@ class Toy {
         pic.append(ul);
         ul.append(this.listItem("Price: " + this.price));
         ul.append(this.listItem("Ages: "+ this.age));
-        ul.append(this.listItem(this.rating + " out of 5 stars"));
+        ul.append(this.listItem("Rating: " + this.rating + " out of 5 stars"));
 
         h4.style.position = "relative";
         h4.style.top = "-200px";
@@ -57,8 +57,9 @@ class Toy {
         h4.style.width = "50%";
 
         ul.style.position = "relative";
+        ul.style.textAlign = "left";
         ul.style.top = "-200px";
-        ul.style.left = "-25px";
+        ul.style.left = "125px";
         ul.style.listStyleType = "none";
         
         return pic;
