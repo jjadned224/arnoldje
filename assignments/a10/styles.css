@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.flex {
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    column-gap: 2%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.toyz {
+    opacity: 70%;
+    position: relative;
+    width: 25%;
+    padding: 30px;
+}
+
+.pictura {
+    width: 25%;
+    padding: 30px;
+    text-wrap: wrap;
+}
+
+.toyz li {
+    list-style-type: none;
+}
+
+img:hover {
+    filter: opacity(30%);
+}
