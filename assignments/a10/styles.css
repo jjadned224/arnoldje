@@ -25,14 +25,35 @@ h1 {
 
 .pictura {
     width: 25%;
-    padding: 30px;
     text-wrap: wrap;
+    background-color: white;
+    height: 300px;
+    width: 25%;
+    padding: 2%;
+    border: solid 1px red;
 }
 
-.toyz li {
-    list-style-type: none;
+
+.pictura ul, h4 {
+    opacity: 0;
+}
+
+.pic_txt {
+    position: relative;
+    left: 40%;
 }
 
 img:hover {
     filter: opacity(30%);
+    border: red solid 5px;
+}
+
+.pictura:hover img {
+        filter: opacity(30%);
+        border: red solid 5px;
+    }
+
+.pictura:hover ul, .pictura:hover h4 {
+    opacity: 100;
+    
 }
