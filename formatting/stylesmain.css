@@ -94,12 +94,16 @@ a:hover{background:lightseagreen;}
     justify-content: center;
 }
 
-@media screen and (max-width : 1200px) {
+.mainpage {
+    display: flex;
+    flex-direction: row;
+}
 
+@media screen and (max-width : 1200px) {
     .lapper {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         column-gap: 10px;
         row-gap: 10px;
         align-items: center;
@@ -125,7 +129,7 @@ a:hover{background:lightseagreen;}
     }
     .lapper {
         display: inline-flex;
-        flex-direction: column;
+        flex-direction: row;
         row-gap: 10px;
         column-gap: 10px;
         align-items: center;
