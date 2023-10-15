@@ -68,7 +68,7 @@ a:hover{background:lightseagreen;}
     border-top: 0;
     border-right: 0;
     border-left: 0;
-    color: red;
+    color: #042069;
     background-color: white;
     text-align: center;
     width: 100%;
@@ -80,7 +80,7 @@ a:hover{background:lightseagreen;}
 }
 
 .buttonborder {
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid #042069;
 }
 
 .hide {
