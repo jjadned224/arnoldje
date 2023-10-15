@@ -19,6 +19,6 @@ const showproject = () => {
 window.onload = () => {
     const butt1 = document.getElementById("ex1"); 
     const butt2 = document.getElementById("ex2");
-    butt1.onclick = showex1;
-    butt2.onclick = showex2;
+    butt1.onclick = showlapper;
+    butt2.onclick = showproject;
 }
