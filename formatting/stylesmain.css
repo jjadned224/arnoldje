@@ -96,7 +96,7 @@ a:hover{background:lightseagreen;}
 
 .mainpage {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 @media screen and (max-width : 1200px) {
