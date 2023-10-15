@@ -137,8 +137,9 @@ a:hover{background:lightseagreen;}
     }
     .navmain {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         width: 100%;
+        justify-content: center;
     }
 }
