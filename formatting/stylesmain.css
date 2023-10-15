@@ -98,11 +98,10 @@ a:hover{background:lightseagreen;}
 
     .lapper {
         width: 100%;
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
         column-gap: 10px;
         row-gap: 10px;
-        flex-wrap: wrap;
         align-items: center;
         align-self: center;
     }
@@ -110,14 +109,14 @@ a:hover{background:lightseagreen;}
     .blocks {
         width: 100%;
     }
-
+    
     .navmain {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         width: 100%;
+        justify-content: center;
     }
-
 }
 
 @media screen and (min-width : 1200px) and (max-width : 99999px) {
@@ -137,10 +136,8 @@ a:hover{background:lightseagreen;}
 
     .navmain {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         width: 100%;
-        justify-content: center;
     }
-    
 }
