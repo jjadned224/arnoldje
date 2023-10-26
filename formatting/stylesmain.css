@@ -118,6 +118,7 @@ a:hover{background:lightseagreen;}
         color:black;
         display: flex;
         flex-direction: column;
+        width: 100%;
         justify-content: center;
         text-align: center;
     }
