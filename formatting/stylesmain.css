@@ -114,13 +114,15 @@ a:hover{background:lightseagreen;}
         width: 100%;
         justify-content: center;
     }
-    .michael {
+    .lapper {
         color:black;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        text-align: center;
+        column-gap: 10px;
+        row-gap: 10px;
+        align-items: center;
+        align-self: center;
     }
 }
 
