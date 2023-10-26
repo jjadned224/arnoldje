@@ -7,7 +7,7 @@
       "genres":[" Alternative Rock"," Grunge", " Heavy rock"],
       "description":"With alt-rock anthems heavy on melody and personality, Foo Fighters have grown from Dave Grohl's humble solo project into one of the biggest -- and most enduring -- acts in modern rock.",
       "month": "20.5 Million",
-      "img":"../band-img/Foo-Fighters.png"
+      "img":"./band-img/Foo-Fighters.png"
     },
     {
       "name":"Shinedown",
@@ -17,7 +17,7 @@
       "genres":[" Hard Rock"," Alternative metal"," Post-grunge"],
       "description":"Multi-platinum band Shinedown Brent Smith, Zach Myers, Eric Bass and Barry Kerch - have cemented their status as one of the most vital and forward-thinking powerhouses in modern rock.",
       "month": "5.8 Million",
-      "img":"../band-img/shinedown.jpg"
+      "img":"./band-img/shinedown.jpg"
     },
     {
       "name":"Alter Bridge",
@@ -27,7 +27,7 @@
       "genres":[" Hard Rock", " Heavy metal"," Post-grunge"],
       "description":"Alter Bridge have steadily climbed to the forefront of hard rock worldwide. In true underdog fashion, they've exceeded any and all expectations, glowing critical acclaim, real estate on the covers of Classic Rock Magazine and Guitar World, and storied sets at the O2 Arena and Download Festival.",
       "month": "2.1 Million",
-      "img":"../band-img/Alter-Bridge.jpg"
+      "img":"./band-img/Alter-Bridge.jpg"
     },
     {
       "name":"Wilderun",
@@ -37,7 +37,7 @@
       "genres":[" Symphonic Metal", " Progressive Metal", " Death Metal"],
       "description":"Wilderun has arrived at the vanguard of the next generation of progressive and melodic death metal bands. Veil of Imagination raises the bar by delivering an intense, grandiose and sophisticated, yet ultimately human, experience.",
       "month": "13.4 Thousand",
-      "img":"../band-img/Wilderun.jpg"
+      "img":"./band-img/Wilderun.jpg"
     }
   ]
   

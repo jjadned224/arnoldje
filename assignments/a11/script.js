@@ -25,6 +25,10 @@ const getBands = async () => {
     h3.innerText = band.name;
     section.append(h3);
   
+    let img = document.createElement("img");
+    img.src = band.img;
+    section.append(img);
+
     let ul = document.createElement("ul");
     section.append(ul);
     ul.append(getLi(`Labels: ${band.labels}`));
