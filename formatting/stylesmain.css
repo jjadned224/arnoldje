@@ -87,14 +87,6 @@ a:hover{background:lightseagreen;}
     display: none;
 }
 
-.michael {
-    color:black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-}
-
 .mainpage {
     display: flex;
     flex-direction: column;
@@ -122,6 +114,13 @@ a:hover{background:lightseagreen;}
         width: 100%;
         justify-content: center;
     }
+    .michael {
+        color:black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width : 1200px) and (max-width : 99999px) {
@@ -143,5 +142,12 @@ a:hover{background:lightseagreen;}
         align-items: center;
         width: 100%;
         justify-content: center;
+    }
+    .michael {
+        color:black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
     }
 }

@@ -19,17 +19,22 @@ const getBands = async () => {
   };
 
   const getBandItem = (band) => {
+    let title = document.createElement("div");
+    let h1 = document.createElement("h1");
+    h1.innerText = band.name;
+    title.append(h1);
+
     let section = document.createElement("section");
-  
-    let h3 = document.createElement("h3");
-    h3.innerText = band.name;
-    section.append(h3);
-  
+    section.classList.add("rower");
+    
+    let row = document.createElement("div");
+
     let img = document.createElement("img");
     img.src = band.img;
     section.append(img);
 
     let ul = document.createElement("ul");
+    
     section.append(ul);
     ul.append(getLi(`Labels: ${band.labels}`));
     ul.append(getLi(`Members: ${band.members}`));
@@ -37,8 +42,10 @@ const getBands = async () => {
     ul.append(getLi(`Genres: ${band.genres}`));
     ul.append(getLi(`Description: ${band.description}`));
     ul.append(getLi(`Monthly Listeners: ${band.month}`));
-  
-    return section;
+    
+    row.appendChild(title);
+    row.appendChild(section);
+    return row;
   };
   
   const getLi = (data) => {
