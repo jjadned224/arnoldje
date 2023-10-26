@@ -1,5 +1,5 @@
 const getBands = async () => {
-    const url = "https://jjadned224.github.io/a11/json/bands.json";
+    const url = "https://jjadned224.github.io/assignments/a11/json/bands.json";
   
     try {
       const response = await fetch(url);
