@@ -27,12 +27,12 @@ const getBands = async () => {
   
     let ul = document.createElement("ul");
     section.append(ul);
-    ul.append(getLi(`Labels: ${band.label}`));
+    ul.append(getLi(`Labels: ${band.labels}`));
     ul.append(getLi(`Members: ${band.members}`));
     ul.append(getLi(`Founded in: ${band.founded}`));
     ul.append(getLi(`Genres: ${band.genres}`));
     ul.append(getLi(`Description: ${band.description}`));
-    ul.append(getLi(`Monthly Listeners: ${band.month0}`));
+    ul.append(getLi(`Monthly Listeners: ${band.month}`));
   
     return section;
   };

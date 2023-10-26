@@ -1,40 +1,40 @@
 [
     {
       "name":"Foo Fighters",
-      "labels": ["Roswell Records", "Capitol", "RCA"],
-      "members": ["Dave Grohl","Nate Mendel","Chris Shiflett","Pat Smear","Rami Jaffee","Josh Freese"],
+      "labels": ["Roswell Records ", "Capitol ", "RCA "],
+      "members": ["Dave Grohl ","Nate Mendel ","Chris Shiflett ","Pat Smear ","Rami Jaffee ","Josh Freese "],
       "founded":"1994",
-      "genres":["Alternative Rock","Grunge", "Heavy rock"],
+      "genres":["Alternative Rock ","Grunge ", "Heavy rock "],
       "description":"With alt-rock anthems heavy on melody and personality, Foo FIghters have grown from Dave Grohl's humble solo project into one of the biggest -- and most enduring -- acts in modern rock.",
       "month": "20.5 Million",
       "img":"images/"
     },
     {
       "name":"Shinedown",
-      "labels": ["Atlantic","Roadrunner"],
-      "members": ["Brent Smith","Barry Kerch","Zach Myers","Eric Bass"],
+      "labels": ["Atlantic ","Roadrunner "],
+      "members": ["Brent Smith ","Barry Kerch ","Zach Myers ","Eric Bass "],
       "founded":"2001",
-      "genres":["Hard Rock","Alternative metal","Post-grunge"],
+      "genres":["Hard Rock ","Alternative metal ","Post-grunge "],
       "description":"Multi-platinum band Shinedown Brent Smith, Zach Myers, Eric Bass and Barry Kerch - have cemented their status as one of the most vital and forward-thinking powerhouses in modern rock.",
       "month": "5.8 Million",
       "img":"images/"
     },
     {
       "name":"Alter Bridge",
-      "labels": ["Wind-up","Universal Republic","Roadrunner","Napalm"],
-      "member": ["Myles Kennedy", "Mark Tremonti", "Brian Marshall","Scott Phillips"],
+      "labels": ["Wind-up ","Universal Republic ","Roadrunner ","Napalm "],
+      "members": ["Myles Kennedy ", "Mark Tremonti ", "Brian Marshall ","Scott Phillips "],
       "founded":"2004",
-      "genres":["Hard Rock", "Heavy metal","Post-grunge"],
+      "genres":["Hard Rock ", "Heavy metal ","Post-grunge "],
       "description":"Alter Bridge have steadily climbed to the forefront of hard rock worldwide. In true underdog fashion, they've exceeded any and all expectations, glowing critical acclaim, real estate on the covers of Classic Rock Magazine and Guitar World, and storied sets at the O2 Arena and Download Festival.",
       "month": "2.1 Million",
       "img":"images/"
     },
     {
-      "title":"Wilderun",
-      "labels": ["Wilderun","Century Media Records"],
-      "member": ["Evan Berry", "Wayne Ingram", "Daniel Müller","Jon Teachey"],
+      "name":"Wilderun",
+      "labels": ["Wilderun ","Century Media Records "],
+      "members": ["Evan Berry ", "Wayne Ingram ", "Daniel Müller ","Jon Teachey "],
       "founded":"2008",
-      "genres":["Symphonic Metal", "Progressive Metal", "Death Metal"],
+      "genres":["Symphonic Metal ", "Progressive Metal ", "Death Metal "],
       "description":"Wilderun has arrived at the vanguard of the next generation of progressive and melodic death metal bands. Veil of Imagination raises the bar by delivering an intense, grandiose and sophisticated, yet ultimately human, experience.",
       "month": "13.4 Thousand",
       "img":"images/"
