@@ -47,6 +47,19 @@ div {
     border: 10px solid black;
 }
 
+.block {
+    row-gap: 10px;
+    column-gap: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: center;
+    justify-content: stretch;
+    font-size: large;
+    background-color: lightblue;
+    border: 10px solid black;
+}
+
 .internal {
     width:max-content;
     box-sizing: border-box;
