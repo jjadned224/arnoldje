@@ -135,6 +135,7 @@ a:hover{background:lightseagreen;}
         flex-direction: row;
         row-gap: 10px;
         column-gap: 10px;
+        justify-content: center;
         align-items: center;
         align-self: center;
         flex-wrap: wrap;
@@ -148,9 +149,13 @@ a:hover{background:lightseagreen;}
     }
     .michael {
         color:black;
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
+        row-gap: 10px;
+        column-gap: 10px;
         justify-content: center;
-        text-align: center;
+        align-items: center;
+        align-self: center;
+        flex-wrap: wrap;
     }
-}
+    }
