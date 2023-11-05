@@ -1,6 +1,13 @@
 const showGames = async () => {
-    let response = await fetch("http://localhost:3000/api/games");
-    let gameJSON = await response.json();
+
+        let response;
+        let gameJSON;
+        try {
+            response = await fetch("./api/games");
+            gameJSON = await response.json();
+        } catch(error) {
+            console.log("error getting Json");
+        }
     let gameDiv = document.getElementById("game-list");
 
     gameJSON.forEach(game => {
