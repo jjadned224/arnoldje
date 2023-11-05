@@ -16,7 +16,7 @@ app.get("/api/games", (req, res) => {
         achiv: "63 Achievements",
         under10: ["Focus"," Happy Couple"," Soul & Shade"," Banishment"," Neglect"," Keen Hunter"," True Hunter"," Passing of the Age",
         " Pure Completion"," Speedrun 1"," Speedrun 2"," Speed Completion"," Embrace the Void"," Steel Soul"," Steel Heart"],
-        img: "./game-img/hk.png"
+        img: "./game-img/HK.png"
     }
     games[1] = {
         name: "ARMORED CORE VI FIRES OF RUBICON",
