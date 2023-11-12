@@ -5,14 +5,38 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <h1>My 100% Compeletion List</h1>
-        <!-- Words can not disribe how long I fiddled with the HTML/CSS/JS to try and make a website that is just a grid of the images
-        That you can click and it displays the information (like is currently on the page) as an absolute element over the rest of the page
-        and like grays out the background of the page. But my god, I can NOT figure out how to do that with appended elements.-->
+        <h1>Song Recommendations!</h1>
+        <a href="#" id="form"><p>Add your own songs here!</p></a>
+        <a href="#" class="hide" id="list"><p>Go back to the list of songs here!</p></a>
         <div id="main">
-            <div class="flex" id="game-list">
+            <div class="flex" id="song-list">
+                <div id="song-display">
+
+                </div>
             </div>
-        </label>
+            <div class="flexer hide" id="formdiv">
+                <form id="inputform" method="POST">
+                    <input id="datz"type="hidden" name="_id" value="-1"/>
+                    <h3><label for="name">Name: </label></h3>
+                <input id="datz"type="text" name="name">
+                    <h3><label for="Artist">Artist: </label></h3>
+                <input id="datz"type="text" name="Artist">
+                    <h3><label for="release">Released: </label></h3>
+                <input id="datz"type="text" name="release">
+                    <h3><label for="runtime">Runtime: </label></h3>
+                <input id="datz"type="text" name="runtime">
+                    <h3><label for="gernes">Genres: </label></h3>
+                <input id="datz"type="text" name="gernes">
+                    <h3><label for="recby">Recommended By: </label></h3>
+                <input id="datz"type="text" name="recby">
+                    <h3><label for="img">Album Cover: </label></h3>
+                <input id="datz"type="file" name="img">
+                    <h3><label for="spotifylink">Embedded Spotify Link: </label></h3>
+                <input id="datz"type="text" name="spotifylink">
+                
+        </form>
+                <a id="submit" href="#"><button  class="butty">Submit!</button></a>
+            </div>
         </div>
         </div>
     </body>
