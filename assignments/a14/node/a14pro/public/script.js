@@ -1,16 +1,15 @@
 let count = 0;
 let songDiv;
-let clearDiv;
 let section;
 let sect2;
-const showSongs = async () => {
-      
-    if (count == 1) {
-        clearSongs();
-    }
-    let songs = await getSong();
-    console.log(songs);
 
+const showSongs = async () => {
+    // I know that this prevents me from printing a "new JSON", but it was the only way to prevent duplicates since .remove() was
+    // not working, however, I was not able to push any array to the Json. So this "solution" is what I went with instead
+    // of trying to find something else.
+    if (count == 1) {
+        return;
+    } else {
 songDiv = document.getElementById("song-list");
 
 
@@ -67,6 +66,8 @@ songJSON.forEach(song => {
     embeded.style.marginLeft = "5%";
     embeded.style.position = "relative";
 
+    // I had this onclick much fancier with all the embeded garbage above inside of it, but for whatever reason it randomly broke
+    // and I couldn't fix it
     a.onclick = () => {
         if (shower == 0) {
             ul.style.display = "none";
@@ -86,15 +87,12 @@ songJSON.forEach(song => {
     
 });
 count = 1;
+    }
 };
-
-const clearSongs = () => {
-    songDiv.removeChild(sect2);
-}
 
 const getSong = async () => {
     try {
-        return (await fetch("api/songs")).json();
+        return (await fetch("./api/songs")).json();
     } catch(error) {
         console.log(error);
     }
@@ -130,31 +128,34 @@ const addForm = async (e) => {
     e.preventDefault();
     const form = document.getElementById("inputform");
     const formData = new FormData(form);
-    let response; 
-    if (form._id.value == -1) {
-        formData.delete("_id");
-        formData.delete("img");
-        formData.append("Dataz", getDatas());
+    console.log(...formData);
+    try {
+        let response;
 
-        console.log(...formData);
-
-        response = await fetch ("/api/songs", {
-            method: "POST",
-            body: formData,
-        });
-    } 
-    if(response.status != 200) {
-        console.log("error");
+        if (form._id == '-1') {
+            formData.delete("_id");
+            formData.delete("img");
+            console.log("form data:" +formData);
+            // THIS IS BROKEN IDK WHY
+            response = await fetch("http://localhost:3000/api/songs", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: formData,
+            });
+        }
+        if (response && response.status !== 200) {
+            console.log("Error:", response.statusText);
+        } else {
+            console.log("Song added successfully");
+            resetForm();
+            showSongs();
+        }
+    } catch (error) {
+        console.error("Error during fetch:", error);
     }
-    
-
-    console.log(response);
-    console.log(form._id);
-    
-    resetForm();
-    showSongs();
-}
-
+};
 const showform = () => {
     let list = document.getElementById("song-list");
     list.classList.add("hide");
@@ -172,7 +173,7 @@ const showlist = () => {
     document.getElementById("form").classList.remove("hide");
     document.getElementById("list").classList.add("hide");
 }
-
+/*
 const getDatas = () => {
     const inputs = document.querySelectorAll("#datz input");
     let Dataz = [];
@@ -183,3 +184,4 @@ const getDatas = () => {
 
     return Dataz;
 }
+*/
