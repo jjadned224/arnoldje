@@ -143,7 +143,7 @@ const addForm = async (e) => {
             console.log("Error:", response.statusText);
         } else {
             console.log("Song added successfully");
-            //resetForm();
+            resetForm();
             showSongs();
         }
     } catch (error) {
