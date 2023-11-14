@@ -7,17 +7,17 @@ const showSongs = async () => {
     // I know that this prevents me from printing a "new JSON", but it was the only way to prevent duplicates since .remove() was
     // not working, however, I was not able to push any array to the Json. So this "solution" is what I went with instead
     // of trying to find something else.
-    if (count == 1) {
+    /*if (count == 1) {
         return;
-    } else {
+    } else {*/
 songDiv = document.getElementById("song-list");
-
+songDiv.innerHTML = "";
 
 let songJSON = await getSong();
-console.log(songJSON);
 songJSON.forEach(song => {
-
+    
     section = document.createElement("section");
+    
     songDiv.append(section);
 
     
@@ -53,14 +53,12 @@ songJSON.forEach(song => {
     ul.append(getLi(`Genres: ${song.genres}`));
     ul.append(getLi(`Recommended By: ${song.recby}`));
 
-    embeded.style = song.spotifylink[0];
-    embeded.src = song.spotifylink[1];
-    embeded.width = song.spotifylink[2];
-    embeded.height = song.spotifylink[3];
-    embeded.frameBorder = song.spotifylink[4];
-    embeded.allowFullscreen = song.spotifylink[5];
-    embeded.allow = song.spotifylink[6];
-    embeded.loading = song.spotifylink[7];
+    embeded.style.borderRadius = '20px';
+    embeded.src = song.spotifylink;
+    embeded.style.width = '100%';
+    embeded.style.height =  '152px';
+    embeded.allowFullscreen = 'fullscreen;';
+    embeded.loading = 'lazy';
     embeded.style.display = "none";
     embeded.style.marginRight = "5%";
     embeded.style.marginLeft = "5%";
@@ -87,12 +85,14 @@ songJSON.forEach(song => {
     
 });
 count = 1;
-    }
+    //}
 };
 
 const getSong = async () => {
     try {
-        return (await fetch("./api/songs")).json();
+
+        const response2 = (await fetch("/api/songs")).json();
+        return response2;
     } catch(error) {
         console.log(error);
     }
@@ -109,7 +109,7 @@ let values = 0;
 window.onload = () => {
 showSongs();
 
-const butt1 = document.getElementById("form"); 
+const butt1 = document.getElementById("form32"); 
 const butt2 = document.getElementById("list");
 butt1.onclick = showform;
 butt2.onclick = showlist;
@@ -128,20 +128,14 @@ const addForm = async (e) => {
     e.preventDefault();
     const form = document.getElementById("inputform");
     const formData = new FormData(form);
-    console.log(...formData);
     try {
         let response;
 
-        if (form._id == '-1') {
+        if (form._id.value == -1) {
             formData.delete("_id");
-            formData.delete("img");
-            console.log("form data:" +formData);
             // THIS IS BROKEN IDK WHY
-            response = await fetch("http://localhost:3000/api/songs", {
+            response = await fetch("/api/songs", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
                 body: formData,
             });
         }
@@ -149,7 +143,7 @@ const addForm = async (e) => {
             console.log("Error:", response.statusText);
         } else {
             console.log("Song added successfully");
-            resetForm();
+            //resetForm();
             showSongs();
         }
     } catch (error) {
@@ -161,7 +155,7 @@ const showform = () => {
     list.classList.add("hide");
     let formDiv = document.getElementById("formdiv");
     formDiv.classList.remove("hide");
-    document.getElementById("form").classList.add("hide");
+    document.getElementById("form32").classList.add("hide");
     document.getElementById("list").classList.remove("hide");
 }
 
@@ -170,7 +164,7 @@ const showlist = () => {
     list.classList.remove("hide");
     let formDiv = document.getElementById("formdiv");
     formDiv.classList.add("hide");
-    document.getElementById("form").classList.remove("hide");
+    document.getElementById("form32").classList.remove("hide");
     document.getElementById("list").classList.add("hide");
 }
 /*
